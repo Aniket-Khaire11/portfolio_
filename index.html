@@ -178,16 +178,17 @@
             text-align: center;
         }
 
-        .profile-img {
-            width: 400px;
-            height: 400px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid rgba(255, 255, 255, 0.3);
-            transition: all 0.3s ease;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        }
-
+     .profile-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* This line fixes the "cut head" issue */
+    object-position: top; 
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
         .profile-img:hover {
             transform: scale(1.1);
         }
@@ -1169,5 +1170,6 @@
 </body>
 
 </html>
+
 
 
